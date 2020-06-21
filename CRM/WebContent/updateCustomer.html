@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Customer</title>
+</head>
+<body>
+	<h1>Update Customer</h1>
+	<form action="http://localhost:8080/CRM/CustomerController" method="post">
+		<input type="hidden" name="source" value="updateCustomer">
+		
+		<table>
+			<tr>
+				<th align="left">Customer ID : </th>
+				<td> <input type="text" name="customerId" /> </td>
+			</tr>	
+			<tr>
+				<th align="left">Update : </th>
+				<td> <input type="radio" name="updateParam" value="city" checked> City &nbsp;
+					 <input type="radio" name="updateParam" value="email"> Email </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td> <input type="text" name="updateValue"/> </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td align="center"> <input type="submit" value="Submit"> </td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

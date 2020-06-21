@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Delete Customer</title>
+</head>
+<body>
+	<h1>Delete Customer</h1>
+	<form action="http://localhost:8080/CRM/CustomerController" method="post">
+		<input type="hidden" name="source" value="deleteCustomer">
+			
+		<table>
+			<tr>
+				<th align="left">Customer ID :</th>
+				<td> <input type="text" name="customerId"/> </td>
+				<td> <input type="submit" value="Submit"> </td>
+			</tr>
+		</table>			
+	</form>
+</body>
+</html>

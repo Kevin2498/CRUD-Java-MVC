@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Customer</title>
+</head>
+<body>
+	<h1>Search Customer</h1>
+	<form action="http://localhost:8080/CRM/CustomerController" method="post">
+		<input type="hidden" name="source" value="searchCustomer">
+		
+		<table>
+			<tr>
+				<th align="left">Search With :</th>
+				<td> <input type="radio" name="searchParam" value="customerId" checked> Customer Id </td>
+				<td> <input type="radio" name="searchParam" value="city"> City </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td> <input type="text" name="searchValue"/> </td>
+			</tr>
+		</table>
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>

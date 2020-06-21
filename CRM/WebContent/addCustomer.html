@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Customer</title>
+</head>
+<body>
+	<h1>Add Customer</h1>
+	<form action="http://localhost:8080/CRM/CustomerController" method="post">
+		<input type="hidden" name="source" value="addCustomer">
+		
+		<table>
+			<tr>
+				<th align="left">First Name</th> <td> <input type="text" name="firstName"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Last Name</th> <td> <input type="text" name="lastName"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Date of Birth (dd/mm/yyyy)</th> <td> <input type="text" name="dob"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Gender</th> <td> <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female <br></td>
+			</tr>
+			<tr>
+				<th align="left">City</th> <td> <input type="text" name="city"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Country</th> <td> <input type="text" name="country"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Email ID</th> <td> <input type="text" name="email"/> </td>
+			</tr>
+			<tr>
+				<th align="left">Annual Salary(INR)</th> <td> <input type="text" name="salary"/> </td>
+			</tr>
+			<tr>
+				<td></td><td><input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
